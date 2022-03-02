@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { ResponsiveChoroplethCanvas } from "@nivo/geo";
-import bundeslaender from "../../data/x/bundeslaender.geo.json";
-import kreise from "../../data/x/kreise.geo.json";
+import bundesländer from "./data/x/bundeslaender.geo.json";
+import landkreise from "./data/x/kreise.geo.json";
 
 function BundeslaenderKarte() {
   // const [data, setData] = useState([]);
@@ -37,10 +37,7 @@ function BundeslaenderKarte() {
 
   return (
     <div className="Body" style={{ display: "flex", placeItems: "center" }}>
-      <div
-        className="Map"
-        style={{ height: 497, width: "100%", border: "1px solid orange" }}
-      >
+      <div className="Map" style={{ height: 500, width: "100%" }}>
         <ResponsiveChoroplethCanvas
           //@ts-ignore
           data={data}
@@ -48,7 +45,7 @@ function BundeslaenderKarte() {
           //   //   console.log(a, b);
           //   return a.properties.ID_2 === b.ID_2;
           // }}
-          features={kreise.features}
+          features={bundesländer.features}
           domain={[0, 100]}
           label={(a) => {
             // console.log(a, a.properties["NAME_3"]);

@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" sticky="top">
         <Container fluid>
           <Navbar.Brand href="#home">
             <img
@@ -17,6 +17,7 @@ function Header() {
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Bundesländer</Nav.Link>
             <Nav.Link href="#features">Landkreise</Nav.Link>
             <Nav.Link href="#pricing">Impfungen</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>

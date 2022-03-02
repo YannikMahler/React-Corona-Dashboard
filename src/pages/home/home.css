@@ -1,5 +1,15 @@
-.homeConatiner {
-  height: 100%;
-  width: 100%;
-  background-color: #343a40;
+.card {
+  text-align: center;
+  border-radius: 5px;
+  /* -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68); */
+  background-color: #495057;
+  /* color: #fff; */
+}
+
+.chart {
+  border-radius: 5px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #495057;
 }
